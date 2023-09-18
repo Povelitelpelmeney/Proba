@@ -1,6 +1,6 @@
 "use strict";
 const score0El = document.querySelector("#score--0");
-const score1El = document.getElementById("#score--1");
+const score1El = document.querySelector("#score--1");
 const btnNew = document.querySelector(".btn--new");
 const btnThrow = document.querySelector(".btn--roll");
 const btnHold = document.querySelector(".btn--hold");
