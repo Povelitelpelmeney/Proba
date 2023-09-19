@@ -6,6 +6,7 @@ let secret = Math.ceil(Math.random() * 20);
 console.log(secret);
 let ok = 0;
 let bestScore = document.querySelector(".highscore").textContent;
+const pointsLeft=document.querySelector(".points_left");
 const func = document
   .querySelector(".check")
   .addEventListener("click", function () {
@@ -33,6 +34,10 @@ const func = document
           document.querySelector("h1").textContent = "Уже поздно угадывать!";
         }
       } else if (secret === curNum) {
+        if(gameScore>=10){
+          pointsLeft.textContent=`У вас осталось ${gameScore-1} очков(а)!`
+          pointsLeft.classList.remove("close");
+        }
         ok = 1;
         document.querySelector(".question").textContent = secret;
         document.querySelector(".guess-message").textContent = "Вы угадали";
@@ -52,6 +57,8 @@ document.querySelector(".again").addEventListener("click", function () {
   secret = Math.ceil(Math.random() * 20);
   console.log(secret);
   ok = 0;
+  pointsLeft.textContent="";
+  pointsLeft.classList.add("close");
   document.querySelector(".question").textContent = "???";
   document.querySelector(".score").textContent = 20;
   document.querySelector("h1").textContent = "Угадай число!";
