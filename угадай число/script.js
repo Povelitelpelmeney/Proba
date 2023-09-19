@@ -40,7 +40,6 @@ const func = document
         }
         ok = 1;
         document.querySelector(".question").textContent = secret;
-        document.querySelector(".guess-message").textContent = "Вы угадали";
         document.querySelector("body").style.backgroundColor = "green";
         document.querySelector(".question").style.width = "100em";
         document.querySelector("h1").textContent = "Поздравляю!";
@@ -49,6 +48,10 @@ const func = document
         if (bestScore < gameScore) {
           bestScore = gameScore;
           document.querySelector(".highscore").textContent = bestScore;
+          document.querySelector(".guess-message").textContent = "Новый рекорд!";
+        }
+        else{
+          document.querySelector(".guess-message").textContent = "Вы угадали";
         }
       }
     }
