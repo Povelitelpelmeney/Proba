@@ -16,7 +16,6 @@ body {
   background-color: rgb(0, 0, 0);
   /*  background-color: rgb(9, 250, 21); */
 }
-
 /* Layout Styles */
 header {
   position: relative;
@@ -31,7 +30,12 @@ main {
   align-items: center;
   justify-content: space-around;
 }
-
+.H1{
+  content: "Введите уровень сложности от 1 до 3!";
+}
+.H2{
+  content: "Угадай число!";
+}
 .left {
   width: 50rem;
   display: flex;
@@ -55,7 +59,6 @@ h1 {
   left: 50%;
   transform: translate(-50%, -50%);
 }
-
 .question {
   background: #fff;
   color: #000;
@@ -109,11 +112,18 @@ h1 {
   background-color: rgb(218, 213, 213);
 }
 
-.guess-message {
+.guess-message1 {
   margin-bottom: 2rem;
   height: 3rem;
 }
-
+.guess-message2 {
+  margin-bottom: 2rem;
+  height: 3rem;
+}
+.guess-message3 {
+  margin-bottom: 2rem;
+  height: 3rem;
+}
 .label-score {
   margin-bottom: 2rem;
 }
