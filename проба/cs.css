@@ -1,0 +1,63 @@
+#p20 {
+  color: rgb(221, 227, 33);
+}
+h1 {
+  color: blueviolet;
+}
+ol {
+  color: rgba(92, 219, 159, 0.3);
+}
+#mydiv p {
+  color: blueviolet;
+  background-color: aquamarine;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+a[href="https://vk.com/lsemenenko0"]
+{
+  border: 4px solid pink;
+  color: red;
+}
+
+#mydiv1.AB {
+  color: chartreuse;
+}
+#mydiv1.BA {
+  color: crimson;
+}
+table {
+  margin-bottom: 50px;
+}
+
+#mydiv1 {
+  color: crimson;
+  background-color: bisque;
+  margin: 50px 100px 50px 100px;
+  text-align: center;
+  padding: 50px 40px 50px 40px;
+  float: left;
+}
+#mydiv2 {
+  background-color: red;
+  margin: 50px 100px 50px 100px;
+  text-align: center;
+  padding: 50px 40px 50px 40px;
+  float: right;
+}
+#mydiv3 {
+  background-color: rgb(8, 133, 243);
+  margin: 50px 100px 50px 100px;
+  text-align: center;
+  padding: 50px 40px 50px 40px;
+  clear: both;
+}
+#mydiv4 {
+  background-color: yellow;
+  margin: 50px 100px 50px 100px;
+  text-align: center;
+  float: left;
+  padding-top: 50px;
+  position: relative;
+  bottom: 120px;
+  opacity: 0.5;
+}
